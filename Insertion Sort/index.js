@@ -11,9 +11,9 @@ Pseudocode:
 */
 
 const insertionSort = arr => {
-    for (let i = 1; i < arr.length; i++) {
+    for (var i = 1; i < arr.length; i++) {
         var currentVal = arr[i];
-        for (let j = i -1; j >= 0 && j > currentVal; j++) {
+        for (var j = i -1; j >= 0 && j > currentVal; j++) {
             arr[j+1] = arr[j];
         }
         arr[j+1] = currentVal;
