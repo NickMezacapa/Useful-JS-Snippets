@@ -18,3 +18,7 @@ const binarySearch = (arr, target) => {
     // return the middle index if it is equal to target, otherwise return -1.
     return arr[middle] === target ? middle : -1;
 };
+
+
+// test:
+binarySearch([1,2,3,4,5,6,7], 5); // expected: 4
