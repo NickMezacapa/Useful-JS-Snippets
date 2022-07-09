@@ -37,10 +37,10 @@ const mergeSort = arr => {
     // base case
     if (arr.length <= 1) return arr;
     // get the middle index of input array
-    let midpoint = Math.floor(arr.length / 2);
+    let midpoint = Math.floor(arr.length / 2),
     // declare left and right portions of the array,
     // we want single length arrays, so we need to continue to call recursive mergeSort function to continue decomposing input array
-    let left = mergeSort(arr.slice(0, midpoint)),
+        left = mergeSort(arr.slice(0, midpoint)),
         right = mergeSort(arr.slice(midpoint));
     // merge decomposed subarrays into one array using previously declared merge function
     // Merge the left and right portions and return this value
